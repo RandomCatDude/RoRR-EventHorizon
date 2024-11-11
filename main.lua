@@ -8,7 +8,7 @@ local eventHorizon = nil
 Initialize(function()
 	local sprite_small = Resources.sprite_load(NAMESPACE, "DifficultyEventHorizon", path.combine(PATH, "DiffEventHorizon.png"), 5, 11, 9)
 	local sprite_large = Resources.sprite_load(NAMESPACE, "DifficultyEventHorizon2x", path.combine(PATH, "DiffEventHorizon2x.png"), 4, 25, 19)
-	local sound_select = Resources.sfx_load("NAMESPACE", "EventHorizonSelect", path.combine(PATH, "select.ogg"))
+	local sound_select = Resources.sfx_load("NAMESPACE", "EventHorizonSelect", path.combine(PATH, "UI_Diff_Horizon.ogg"))
 
 	eventHorizon = Difficulty.new(NAMESPACE, "eventHorizon")
 	eventHorizon:set_sprite(sprite_small, sprite_large)

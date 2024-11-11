@@ -1,5 +1,14 @@
-# I truly apologise if you're expecting anything reasonable to any degree.
+# Event Horizon
 
-This mode is a faithful direct recreation of the official Typhoon difficulty that was going to be in RoRR.
+This mod is a faithful direct recreation of the official Typhoon difficulty that was going to be in RoRR.
 
-It never made the cut. Wanna find out why?
+* Massively increased initial difficulty scale
+* Elite spawn chance starts maxed out (at 80%)
+* Global +15% increase to enemy movement speed, attack speed, and cooldown reduction
+* Time scaling and Directot point scaling is doubled from Monsoon
+* Loop-exclusive enemies spawn pre-loop
+* Enemy Gold and Exp drops are reduced by 30%
+* Not fun
+* It fucking sucks
+
+Thanks to Winslow for the selection sound.
