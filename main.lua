@@ -58,7 +58,7 @@ gm.post_script_hook(gm.constants.recalculate_stats, function(self, other, result
 			actor:get_active_skill(Skill.SLOT.special),
 		}
 		for i, skill in ipairs(skills) do
-			skill.cooldown = skill.cooldown * 0.85
+			skill.cooldown = math.ceil(skill.cooldown * 0.85)
 		end
 	end
 end)

@@ -1,3 +1,6 @@
+# v1.0.3
+* Oops (fixed mistake in new implementation of enemy cdr)
+
 # v1.0.2
 * Enemy cooldown reduction now actually works
 
