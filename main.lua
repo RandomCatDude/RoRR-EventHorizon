@@ -46,9 +46,20 @@ true) -- post
 gm.post_script_hook(gm.constants.recalculate_stats, function(self, other, result, args)
 	if self.team == 2.0 and eventHorizon:is_active() then
 		self.attack_speed = self.attack_speed * 1.15
-		self.cdr = 1-((1-self.cdr)*0.85)
+		--self.cdr = 1-((1-self.cdr)*0.85) -- doesn't work lmao'
 		self.pHmax_raw = self.pHmax_raw * 1.15
 		self.pHmax = self.pHmax * 1.15
+
+		local actor = Instance.wrap(self)
+		local skills = {
+			actor:get_active_skill(Skill.SLOT.primary),
+			actor:get_active_skill(Skill.SLOT.secondary),
+			actor:get_active_skill(Skill.SLOT.utility),
+			actor:get_active_skill(Skill.SLOT.special),
+		}
+		for i, skill in ipairs(skills) do
+			skill.cooldown = skill.cooldown * 0.85
+		end
 	end
 end)
 
