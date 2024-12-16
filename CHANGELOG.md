@@ -1,3 +1,7 @@
+# v1.0.4
+* marked as mp-compatible
+  * truthfully i haven't tested it at all but i dont see why it wouldn't work lol
+
 # v1.0.3
 * Oops (fixed mistake in new implementation of enemy cdr)
 
