@@ -1,3 +1,6 @@
+# v1.0.5
+* update for toolkit 1.2.8 compat
+
 # v1.0.4
 * marked as mp-compatible
   * truthfully i haven't tested it at all but i dont see why it wouldn't work lol

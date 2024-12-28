@@ -19,18 +19,19 @@ Initialize(function()
 	eventHorizon:set_monsoon_or_higher(true)
 	eventHorizon:set_allow_blight_spawns(true)
 
-	Callback.add("onGameStart", "EventHorizonStart", function(self, other, result, args)
-		-- self is oDirectorControl
+	Callback.add(Callback.TYPE.onGameStart, "EventHorizonStart", function()
 		if eventHorizon:is_active() then
-			self.enemy_buff = self.enemy_buff + 1.5
-			self.elite_spawn_chance = 0.8
+			local director = GM._mod_game_getDirector()
+			director.enemy_buff = director.enemy_buff + 1.5
+			director.elite_spawn_chance = 0.8
 		end
 	end)
 
-	Callback.add("onDirectorPopulateSpawnArrays", "EventHorizonPreLoopMonsters", function(self, other, result, args)
-		if self.loops == 0 and eventHorizon:is_active() then
+	Callback.add(Callback.TYPE.onDirectorPopulateSpawnArrays, "EventHorizonPreLoopMonsters", function()
+		local director = GM._mod_game_getDirector()
+		if director.loops == 0 and eventHorizon:is_active() then
 			-- add loop-exclusive spawns to before loop
-			local director_spawn_array = Array.wrap(self.monster_spawn_array)
+			local director_spawn_array = director.monster_spawn_array
 			local current_stage = Stage.wrap(GM._mod_game_getCurrentStage())
 
 			local loop_spawns = List.wrap(current_stage.spawn_enemies_loop)

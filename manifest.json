@@ -1,10 +1,10 @@
 {
     "name": "EventHorizon",
-    "version_number": "1.0.3",
+    "version_number": "1.0.5",
     "website_url": "https://github.com/RandomCatDude/RoRR-EventHorizon",
     "description": "Do you think the game is too easy?",
 	"dependencies": [
-		"ReturnOfModding-ReturnOfModding-1.0.49",
-		"RoRRModdingToolkit-RoRR_Modding_Toolkit-1.1.28"
+		"ReturnOfModding-ReturnOfModding-1.0.56",
+		"RoRRModdingToolkit-RoRR_Modding_Toolkit-1.2.8"
 	]
 }
